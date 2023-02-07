@@ -1,15 +1,17 @@
 .container{
   width:100%;
   height: 100%;
-  border: 1px solid red;
+  /* padding: 50px; */
+  /* border: 1px solid red; */
 }
 .chart {
+  /* padding: 22px; */
   position: relative;
   display: inline-block;
   color: #999;
   font-size: 20px;
   text-align: center;
-  border: 1px solid rgb(0, 255, 0);
+  /* border: 1px solid rgb(0, 255, 0); */
 }
 
 .chart figcaption {
@@ -63,23 +65,49 @@
   stroke: #f04c40;
 }
 
-.javascript {
-  max-width: 90px;
-  max-height: 90px;
-  top: 45px;
+.Postman {
+  top: 50px;
   left: 45px;
 }
 
-.javascript + svg .outer {
-  stroke: #f0e040;
+.Postman + svg .outer {
+  stroke: #bf3f11;
 }
+
+.Cucumber {
+  top: 75px;
+  left: 55px;
+}
+
+.Cucumber + svg .outer {
+  stroke: #086209;
+}
+
+.TypeScript {
+  top: 50px;
+  left: 45px;
+}
+
+.TypeScript + svg .outer {
+  stroke: #0c72e7;
+}
+
+.Ruby {
+  top: 75px;
+  left: 55px;
+}
+
+.Ruby + svg .outer {
+  stroke: #8e0707;
+}
+
 .html {
   top: 50px;
   left: 45px;
 }
 
 .html + svg .outer {
-  stroke: #e34f26;
+  stroke: #c7431f;
 }
 
 .css {
@@ -88,20 +116,18 @@
 }
 
 .css + svg .outer {
-  stroke: #0d84ce;
+  stroke: #00619c;
 }
 
-
-
-.node {
-  width: 200px;
-  height: 200px;
+.javascript {
+  max-width: 90px;
+  max-height: 90px;
   top: 45px;
   left: 45px;
 }
 
-.node + svg .outer {
-  stroke: #83cd29;
+.javascript + svg .outer {
+  stroke: #dbc923;
 }
 
 .chart svg {
@@ -154,84 +180,3 @@
   animation: show25 2s;
 }
 /* END set initial animation values */
-
-/* Keyframes for the initial animation */
-@-webkit-keyframes show100 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes show100 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@-webkit-keyframes show75 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 134;
-  }
-}
-
-@keyframes show75 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 124;
-  }
-}
-
-@-webkit-keyframes show50 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 267;
-  }
-}
-
-@keyframes show50 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 267;
-  }
-}
-
-@-webkit-keyframes show25 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 401;
-  }
-}
-
-@keyframes show25 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 401;
-  }
-}
