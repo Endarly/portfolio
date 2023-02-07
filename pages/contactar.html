@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Contactar</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="main-nav">
+                <li>
+                    <a href="../index.html" class="nav-links">Inicio</a>
+                </li>
+                <li>
+                    <a href="./experiencia.html" class="nav-links">Experiencia</a>
+                </li>
+                <li>
+                    <a href="./herramientas.html" class="nav-links">Herramientas</a>
+                </li>
+                <li>
+                    <a href="./acercade.html" class="nav-links">Acerca de</a>
+                </li>
+                <li>Contactar</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="logocontainer">
+                <a href="../index.html">
+                    <div class="logoE"></div>
+                </a>
+            </div>
+
+            <section>
+                <h1>Contactar </h1>
+            </section>
+
+
+            <!-- <section>
+                <form action="">
+                    <label for="name">Ingresá tu Nombre</label> <br>
+                    <input type="text" placeholder="Nombre"> <br>
+                    <label for="name">Ingresá tu Apellido</label> <br>
+                    <input type="text" placeholder="Apellido"> <br>
+                    <label for="email">Ingresá tu email</label> <br>
+                    <input type="email" placeholder="email@email.com"> <br>
+                    <label for="name">Ingresá Nombre de la Empresa</label> <br>
+                    <input type="text" placeholder="Empresa"> <br>
+                    <label for="name">Ingresá Tipo de Industria</label> <br>
+                    <input type="text" placeholder="Industria"> <br>
+                    <input type="checkbox"> <label for="">Terminos y condiciones</label> <br>
+                    <input type="submit" value="Enviar"> <br>
+
+                </form>
+
+
+            </section> -->
+
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="form" id="form1">
+
+                        <p class="name">
+                            <input name="name" type="text"
+                                class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+                                placeholder="Ingresá tu nombre" id="name" />
+                        </p>
+
+                        <p class="email">
+                            <input name="email" type="text" class="validate[required,custom[email]] feedback-input"
+                                id="email" placeholder="Ingresá tu email" />
+                        </p>
+
+                        <p class="text">
+                            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment"
+                                placeholder="Ingresá tu comentario"></textarea>
+                        </p>
+
+
+                        <div class="submit">
+                            <input type="submit" value="Enviar" id="button-blue" />
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li> <a href="https://www.linkedin.com/in/endarly-betancourt/n" target="_blank"> <i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li> <a href="https://github.com/Endarly" target="_blank"> <i class="fa-brands fa-github"></i></a></li>
+                <li> <a href="https://twitter.com/i/flow/single_sign_on" target="_blank"> <i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li> <a href="https://www.instagram.com/endarly/" target="_blank"> <i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li> <a href="https://es-la.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
