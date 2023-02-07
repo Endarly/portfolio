@@ -34,9 +34,7 @@ main {
     justify-content: center;
     align-items: center;
     background-size: cover;
-    /* background-image: url("../multimedia/newImage/fondo_nuevo.png"); */
     background-repeat: no-repeat;
-    /* border: 1px solid rgb(44, 76, 217); */
 }
 
 nav>ul>li {
