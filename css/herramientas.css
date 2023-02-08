@@ -93,8 +93,8 @@
 }
 
 .Ruby {
-  top: 75px;
-  left: 55px;
+  top: 45px;
+  left: 45px;
 }
 
 .Ruby + svg .outer {
@@ -122,12 +122,21 @@
 .javascript {
   max-width: 90px;
   max-height: 90px;
-  top: 45px;
+  top: 65px;
   left: 45px;
 }
 
 .javascript + svg .outer {
   stroke: #dbc923;
+}
+
+.github {
+  top: 45px;
+  left: 45px;
+}
+
+.github + svg .outer {
+  stroke: #030303;
 }
 
 .chart svg {

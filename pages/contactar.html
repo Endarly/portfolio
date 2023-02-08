@@ -30,6 +30,7 @@
                     <a href="./acercade.html" class="nav-links">Acerca de</a>
                 </li>
                 <li>Contactar</li>
+                </li>
             </ul>
         </nav>
     </header>
@@ -40,61 +41,40 @@
                 <a href="../index.html">
                     <div class="logoE"></div>
                 </a>
+
+                <div class="espacio"></div>
+
+                <section>
+                    <h1>Contactar</h1>
+                </section>
+                <div class="espacio"></div>
             </div>
 
-            <section>
-                <h1>Contactar </h1>
-            </section>
+            <div id="form-div">
+                <form class="form">
+                    <p>
+                        <input name="name" type="text"
+                            class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+                            placeholder="Ingresá tu nombre y apellido" />
+                    </p>
 
+                    <p>
+                        <input name="email" type="text" class="validate[required,custom[email]] feedback-input"
+                            placeholder="email@email.com">
+                    </p>
 
-            <!-- <section>
-                <form action="">
-                    <label for="name">Ingresá tu Nombre</label> <br>
-                    <input type="text" placeholder="Nombre"> <br>
-                    <label for="name">Ingresá tu Apellido</label> <br>
-                    <input type="text" placeholder="Apellido"> <br>
-                    <label for="email">Ingresá tu email</label> <br>
-                    <input type="email" placeholder="email@email.com"> <br>
-                    <label for="name">Ingresá Nombre de la Empresa</label> <br>
-                    <input type="text" placeholder="Empresa"> <br>
-                    <label for="name">Ingresá Tipo de Industria</label> <br>
-                    <input type="text" placeholder="Industria"> <br>
-                    <input type="checkbox"> <label for="">Terminos y condiciones</label> <br>
-                    <input type="submit" value="Enviar"> <br>
+                    <p>
+                        <textarea name="text" class="validate[required,length[6,300]] feedback-input"
+                            placeholder="Ingresá tu comentario"></textarea>
+                    </p>
 
+                    <div>
+                        <input type="submit" value="Enviar" id="button-blue" />
+                        <div class="ease"></div>
+                    </div>
                 </form>
-
-
-            </section> -->
-
-            <div id="form-main">
-                <div id="form-div">
-                    <form class="form" id="form1">
-
-                        <p class="name">
-                            <input name="name" type="text"
-                                class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
-                                placeholder="Ingresá tu nombre" id="name" />
-                        </p>
-
-                        <p class="email">
-                            <input name="email" type="text" class="validate[required,custom[email]] feedback-input"
-                                id="email" placeholder="Ingresá tu email" />
-                        </p>
-
-                        <p class="text">
-                            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment"
-                                placeholder="Ingresá tu comentario"></textarea>
-                        </p>
-
-
-                        <div class="submit">
-                            <input type="submit" value="Enviar" id="button-blue" />
-                            <div class="ease"></div>
-                        </div>
-                    </form>
-                </div>
             </div>
+        </div>
     </main>
 
     <footer>
