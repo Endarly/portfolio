@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-#form-div {
+.form-div {
     background-color: rgba(72, 72, 72, 0.4);
     padding-left: 35px;
     padding-right: 35px;
@@ -8,7 +8,7 @@
     padding-bottom: 50px;
     width: 450px;
     float: left;
-    left: 50%;
+    left: 18%;
     position: relative;
     margin-top: 30px;
     margin-left: -260px;
