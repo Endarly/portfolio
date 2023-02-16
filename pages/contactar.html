@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/form.css">
     <title>Contactar</title>
@@ -36,49 +38,55 @@
     </header>
 
     <main>
-        <div class="contenedor">
+        <section>
             <div class="logocontainer">
-                <section class="containerlogo">
-                    <a href="../index.html">
-                        <div class="logoE"></div>
-                    </a>
-                </section>
-                <section class="containerlogo">
-                    <div class="espacio"></div>
-                </section>
-                <section>
+                <a href="../index.html">
+                    <div class="logoE"></div>
+                </a>
+            
+                <section class="titulo">
                     <h1>Contactar</h1>
                 </section>
-                <div class="espacio"></div>
             </div>
+        </section>
 
-            <section class="formDiv">
-                <div class="form-div">
-                    <form class="form">
-                        <p>
-                            <input name="name" type="text"
-                                class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
-                                placeholder="Ingresá tu nombre y apellido" />
-                        </p>
+        <section>
+            <div class="form">
+                <form method="POST" action="">
+                  <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" maxlength="50" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ]{3,23}" title="Debe indicar su nombre correctamente" required>
+                  </div>
+    
+                  <div class="input-field">
+                    <i class="fas fa-mobile-alt"></i>
+                    <label for="telefono">Teléfono</label>
+                    <input type="telf" name="telefono" maxlength="9" pattern="^[6789]\d{8}$" title="Debe indicar un telefono válido" required>
+                  </div>
+    
+                  <div class="input-field">
+                    <i class="fas fa-at"></i>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Debe indicar un correo válido" required>
+                  </div>
+    
+                  <div class="input-field">
+                    <i class="fas fa-pen"></i>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" rows="10" length="140" required></textarea>
+                  </div>
+    
+                  <div class="btn-block">
+                    <button class="btn" type="submit"><i class="fas fa-paper-plane"></i>ENVIAR</button>
+                  </div>
+    
+                </form>
+              </div>
 
-                        <p>
-                            <input name="email" type="text" class="validate[required,custom[email]] feedback-input"
-                                placeholder="email@email.com">
-                        </p>
+        </section>
 
-                        <p>
-                            <textarea name="text" class="validate[required,length[6,300]] feedback-input"
-                                placeholder="Ingresá tu comentario"></textarea>
-                        </p>
 
-                        <div>
-                            <input type="submit" value="Enviar" id="button-blue" />
-                            <div class="ease"></div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </div>
 
     </main>
 </body>
